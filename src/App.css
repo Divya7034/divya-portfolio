@@ -838,10 +838,23 @@ footer {
     font-size: 34px;
     line-height: 1.25;
     text-align: center;
-    white-space: normal;
+
+    /* Force the name to be visible on mobile */
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
+
+    white-space: normal;S
     overflow: visible;
     word-break: normal;
     overflow-wrap: break-word;
+  }
+
+  .hero h1 span {
+    color: #8c7cff !important;
+    -webkit-text-fill-color: #8c7cff !important;
   }
 }
 
