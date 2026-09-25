@@ -821,21 +821,27 @@ footer {
     gap: 15px;
   }
 
-  /* Mobile fix for full name */
+ /* Mobile fix for full name */
 @media (max-width: 600px) {
+  .hero-content {
+    width: 100%;
+    min-width: 0;
+    overflow: visible;
+  }
+
   .hero h1 {
-    font-size: 36px;
-    line-height: 1.2;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0;
+    font-size: 34px;
+    line-height: 1.25;
+    text-align: center;
     white-space: normal;
     overflow: visible;
     word-break: normal;
-    overflow-wrap: normal;
-    text-align: center;
-  }
-
-  .hero-content {
-    min-width: 0;
-    width: 100%;
+    overflow-wrap: break-word;
   }
 }
 
